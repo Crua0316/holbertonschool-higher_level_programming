@@ -2,12 +2,13 @@
 import random
 number = random.randint(-10000, 10000)
 if number < 0:
-    lastnum = number % -10
+    ln = number % -10
 else:
-    lastnum = number % 10
-if lastnum > 5:
-    print("Las digit of {} is {} and is greter than 5".format(number, lastnum))
-elif lastnum == 0:
-    print("Las digit of {} is {} and is 0".format(number, lastnum))
+    ln = number % 10
+if ln > 5:
+    print("Las digit of {} is {} and is greter than 5".format(number, ln))
+elif ln == 0:
+    print("Las digit of {} is {} and is 0".format(number, ln))
 else:
-    print("Las digit of {} is {} and is less than 6 and not 0".format(number, lastnum))
+    print("Las digit of {} is".format(number), end=' ')
+    print("{} and less than 6 and not 0".format(ln))
