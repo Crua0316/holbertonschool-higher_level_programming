@@ -10,5 +10,4 @@ if ln > 5:
 elif ln == 0:
     print("Las digit of {} is {} and is 0".format(number, ln))
 else:
-    print("Las digit of {} is".format(number), end=' ')
-    print("{} and less than 6 and not 0".format(ln))
+    print("Las digit of {} is {} and less than 6 and not 0".format(number, ln))
