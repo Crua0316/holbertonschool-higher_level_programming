@@ -85,5 +85,4 @@ class Rectangle:
     def __del__(self):
         """Delete the square input"""
         print("Bye rectangle...")
-        if Rectangle.number_of_instances:
-            Rectangle.number_of_instances -= 1
+        Rectangle.number_of_instances -= 1
