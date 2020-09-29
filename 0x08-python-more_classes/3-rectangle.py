@@ -72,5 +72,5 @@ class Rectangle:
         """Return string of rectangles with #"""
         if self.height == 0 or self.height == 0:
             return ""
-        rec = "#" * self.width
-        return "\n".join(list(rec for a in range(self.height)))
+        rec = '#' * self.width
+        return '\n'.join(list(rec for a in range(self.height)))
