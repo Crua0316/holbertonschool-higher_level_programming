@@ -67,7 +67,7 @@ class Rectangle:
         if (self.width or self.height) == 0:
             return 0
         return(2 * self.height) + (2 * self.width)
-    
+
     def __str__(self):
         """Return string of rectangles with #"""
         if (self.width or self.height) == 0:
