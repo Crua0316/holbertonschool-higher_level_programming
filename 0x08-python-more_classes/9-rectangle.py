@@ -40,10 +40,10 @@ class Rectangle:
             TypeError: when value is not an int.
             ValueError: value is less than 0.
         """
-        if value < 0:
-            raise ValueError("width must be >= 0")
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
+        if value < 0:
+            raise ValueError("width must be >= 0")
         self.__width = value
 
     @property
