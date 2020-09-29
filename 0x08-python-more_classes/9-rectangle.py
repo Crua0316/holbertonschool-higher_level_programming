@@ -6,8 +6,8 @@
 class Rectangle:
     """Creates base height and width of the rectangle
     Attributtes
-        number_of_instances: number of instances
-        print_symbol: symbol of #
+        number_of_instances: number of instances.
+        print_symbol: symbol of #.
     """
 
     number_of_instances = 0
@@ -94,10 +94,10 @@ class Rectangle:
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
-        """Returns the bigger Rectangle
+        """Returns the bigger Rectangle.
         Args:
-            rect_1: the first rectangle input
-            rect_2: the second rectangle input
+            rect_1: the first rectangle input.
+            rect_2: the second rectangle input.
         """
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
@@ -105,12 +105,13 @@ class Rectangle:
             raise TypeError("rect_2 must be an instance of Rectangle")
         if rect_1.area() >= rect_2.area():
             return rect_1
-        return rect_2
+        else:
+            return rect_2
 
     @classmethod
     def square(cls, size=0):
-        """Returns a new square instance
+        """Returns a new square instance.
         Args:
-            Size: Size of square
+            Size: Size of square.
         """
         return cls(size, size)
