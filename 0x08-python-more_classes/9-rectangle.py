@@ -68,24 +68,24 @@ class Rectangle:
 
     def area(self):
         """Gets the ares of the Rectangle"""
-        return self.__width * self.__height
+        return self.width * self.height
 
     def perimeter(self):
         """Gets the perimeter of the rectangle"""
-        if (self.__width or self.__height) == 0:
+        if (self.width or self.height) == 0:
             return 0
         return(2 * self.height) + (2 * self.width)
 
     def __str__(self):
         """Return string of rectangles with #"""
-        if (self.__width or self.__height) == 0:
+        if (self.width or self.height) == 0:
             return ""
         rec = str(self.print_symbol) * self.width
         return "\n".join(list(rec for a in range(self.height)))
 
     def __repr__(self):
         """Return string representation of Rectangle"""
-        return "Rectangle({}, {})".format(self.__width, self.__height)
+        return "Rectangle({}, {})".format(self.width, self.height)
 
     def __del__(self):
         """Delete the square input"""
