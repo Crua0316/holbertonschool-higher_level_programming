@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""Pascal triangle in python
+"""
+
+
 def pascal_triangle(n):
     """creatign pascals triangle
     Args:
