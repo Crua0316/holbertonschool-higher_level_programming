@@ -11,8 +11,7 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        """Public method
-        """
+        """Public method"""
         if attrs is None:
             return self.__dict__
         else:
